@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container--tabs">
+        <section class="row">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1">24 Hours</a></li>
+                <li class=""><a href="#tab-2">4 Days</a></li>
+                <li class=""><a href="#tab-3">90 Days</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active"> 
+                    <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                    <span class="col-md-10">
+                        <h3>24 Hours</h3>
+                        <div class="chart">
+                            <canvas id="myChart" width="400" height="200"></canvas>
+                        </div>                         
+                    </span>
+                </div> 
+                <div id="tab-2" class="tab-pane">
+                    <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                    <span class="col-md-10">
+                        <h3>4 Days</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </span>
+                </div>
+                <div id="tab-3" class="tab-pane">
+                    <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                    <span class="col-md-10">
+                        <h3>90 Days</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="./script.js"></script>
+    <script src="./chart.js"></script>
+</body>
+</html>
