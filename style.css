@@ -50,4 +50,6 @@
 
   .chart {
     border: 3px solid royalblue;
+    margin-bottom: 30px;
+    padding: 20px;
   }

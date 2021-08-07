@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container select {
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #0e73cc;
+    color: white;
+    cursor: pointer;
+}
