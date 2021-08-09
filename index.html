@@ -7,15 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./dropdown.css">
-	<title>Document</title>
+	<title>Monitoring Dashboard</title>
 </head>
 
 <body>
 	<div class="container--tabs">
-		<header>
-			<h1>Test Project</h1>
+		<header class="heading">
+			<h1>Monitoring Dashboard</h1>
 		</header>
-		<section>
+		<section class="filter">
 			<div id="container" class="container">
 				<select id="stateOption">
 					<!-- <option value="" readonly="true" hidden="true" selected>Select State</option> -->
@@ -41,11 +41,11 @@
 			</div>
 		</section>
 		<section class="row">
-			<ul class="nav nav-tabs">
-				<li class="active"><a data-day="1" href="#tab-1">24 Hours</a></li>
-				<li class=""><a data-day="4" href="#tab-2">4 Days</a></li>
-				<li class=""><a data-day="90" href="#tab-3">90 Days</a></li>
-			</ul>
+			<div class="nav nav-tabs">
+				<div class="nav-item active"><a data-day="1" href="#tab-1">24 Hours</a></div>
+				<div class="nav-item"><a data-day="4" href="#tab-2">4 Days</a></div>
+				<div class="nav-item"><a data-day="90" href="#tab-3">90 Days</a></div>
+			</div>
 			<div class="tab-content">
 				<div id="tab-1" class="tab-pane active">
 					<span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>

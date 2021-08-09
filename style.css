@@ -1,39 +1,52 @@
 .container--tabs {
-    margin: 2rem;
+  padding: 1px 10px 0px 10px;
+  }
+  .container--tabs .heading {
+    background: #e8e8dd;
+    padding: 10px 20px;
+    border-bottom: 1px solid #c3c1c1;
+  }
+  .container--tabs .filter {
+    background: #e8e8dd;
+    padding: 20px 0;
   }
   .container--tabs .nav-tabs {
-    float: left;
-    width: 100%;
+    display: flex;
+    background: #d6d6d0;
     margin: 0;
     list-style-type: none;
-    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
   }
-  .container--tabs .nav-tabs > li {
-    float: left;
-    margin-bottom: -1px;
+  .container--tabs .nav-tabs > .nav-item {
+    text-align: center;
+    width: 33.33%;
+    border-right: 2px solid #e8e8dd;
   }
-  .container--tabs .nav-tabs > li > a {
-    float: left;
+  .container--tabs .nav-tabs > .nav-item:last-child {
+    border: 0;
+  }
+  .container--tabs .nav-tabs > .nav-item > a {
     margin-right: 2px;
-    line-height: 1.42857143;
-    padding: 10px;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
     border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
   }
-  .container--tabs .nav-tabs > li > a:hover {
+  /* .container--tabs .nav-tabs > .nav-item > a:hover {
     border-color: #eee #eee #ddd;
-  }
-  .container--tabs .nav-tabs > li.active > a,
-  .container--tabs .nav-tabs > li.active > a:hover,
-  .container--tabs .nav-tabs > li.active > a:focus {
+  } */
+  .container--tabs .nav-tabs > .nav-item.active > a,
+  .container--tabs .nav-tabs > .nav-item.active > a:hover,
+  .container--tabs .nav-tabs > .nav-item.active > a:focus {
     color: #555;
     cursor: default;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
+    background-color: #efefef;;
+    border-bottom: 2px solid #f32d2de0;
   }
   .container--tabs .tab-content {
-    float: left;
     width: 100%;
   }
   .container--tabs .tab-content > .tab-pane {
@@ -49,7 +62,7 @@
   }
 
   .chart {
-    border: 3px solid royalblue;
+    border: 2px solid #10101052;
     margin-bottom: 30px;
     padding: 20px;
   }

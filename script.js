@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
     getChartData(activeTab, params);
     
 	// store tabs variable
-	var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+	var myTabs = document.querySelectorAll("div.nav-tabs > .nav-item");
   function myTabClicks(tabClickEvent) {
 		for (var i = 0; i < myTabs.length; i++) {
 			myTabs[i].classList.remove("active");
