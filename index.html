@@ -1,14 +1,86 @@
 <html>
+
 <head>
-<!-- <script language="javascript">
+    <!-- <script language="javascript">
 </script> -->
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<input type="button" id="paste" value="paste" >
-<input type="button" id="copy" value="copy">
-<div id="content"></div>
-<input type="button" id="submit" value="submit">
-<script src="./script.js"></script>
+    <div class="container">
+        <h4>Batch Test </h4>
+        <div>
+            <form>
+                <div class="input-file">
+                    <h5>input file:</h5>
+                    <div class="form-group row my-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">input file name</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputEmail3">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="delimeter">
+                        </div>
+                    </div>
+                    <div class="form-group row my-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">header row</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputPassword3">
+                        </div>
+                    </div>
+                    <div class="form-group row my-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">data row</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputPassword3">
+                        </div>
+                    </div>
+                    <div class="form-group row my-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">start script</label>
+                        <div class="input-group mb-2 col-sm-3 w-25">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">_start.sh</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup">
+                        </div>
+                    </div>
+                </div>
+                <div class="output-file">
+                    <h5>output file:</h5>
+                    <div class="form-group row my-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">output file name</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputEmail3">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="delimeter">
+                        </div>
+                    </div>
+                    <div class="form-group row my-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">header row</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="inputPassword3">
+                        </div>
+                    </div>
+                    <div class="form-group row my-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">end script</label>
+                        <div class="input-group mb-2 col-sm-3 w-25">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">_end.sh</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="col-sm-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -2,18 +2,9 @@ body {
   padding: 40px;
 }
 
-table {
-  margin: 40px 0;
-}
-
-input[type="button"] {
-  margin: 20px 5px;
-}
-
-#submit {
-  display: none;
-}
-
-tr:first-child {
-  background-color: #c6c6c6;
+.container {
+  justify-content: center;
+  max-width: 1000px;
+  padding: 40px;
+  background: #c1c1c124;
 }
