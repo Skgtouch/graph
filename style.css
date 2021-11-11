@@ -8,3 +8,12 @@ body {
   padding: 40px;
   background: #c1c1c124;
 }
+
+#ScenarioTable{
+    border-collapse: collapse;
+}
+
+.close {
+  background: transparent;
+  border: 0;
+}

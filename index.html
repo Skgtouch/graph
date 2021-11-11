@@ -73,14 +73,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="scenario">
+                    <h5>scenario:</h5>
+                    <input type="button" class="btn btn-primary btn-sm" value="Add More rows" onclick="insRow()">
+                    <input type="button" class="btn btn-primary btn-sm" value="Add More columns" onclick="insCol()">
+                    <br>
+                    <br>
+                    <div id="ScenarioTableDiv">
+                        <table id="ScenarioTable" border="1">
+                            <tr>
+                                <td>Delete</td>
+                                <td style="min-width:100px"></td>
+                                <td onclick="deleteCol(this)">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span style="font-size: 24px;">&times;</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="min-width:100px"></td>
+                                <td><b> Index</b> </td>
+                                <td><input size=20 type="text" style="font-weight: bold;font-size:14px;" value="HEADER">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button onclick="deleteRow(this)" type="button" class="close" aria-label="Close">
+                                        <span style="font-size: 24px;">&times;</span>
+                                    </button>
+                                </td>
+                                <td>1</td>
+                                <td><input size=25 type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
                 <div class="form-group row my-3">
                     <div class="col-sm-3">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
